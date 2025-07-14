@@ -4,9 +4,9 @@ jobs:
     greet:          #greet ---< name of job
         runs-on: ubuntu-latest   # remote machine runner https://github.com/actions/runner-images
         steps:  
-            - name: "greet-user"
+            - name: "Echo value"
               run: |
-                echo "hello World"
+                echo "Echo Github value.....""
                 echo "{{toJson(github)}}" # retuns the value 
                 git clone https://github.repository/${{github.repository}}.git  
                 
