@@ -8,7 +8,5 @@ jobs:
               run: |
                 echo "hello World"
                 echo "{{toJson(github)}}" # retuns the value 
-                git clone https://github.repository/${{github.repository}}.git #cloing the currebt repo
-
-              
-
+                git clone https://github.repository/${{github.repository}}.git  
+                
