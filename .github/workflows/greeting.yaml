@@ -7,6 +7,7 @@ jobs:
             - name: "Echo value"
               run: |
                 echo "Echo Github value....."
-                echo "{{toJson(github)}}" 
-                git clone https://github.repository/${{github.repository}}.git  
+                 echo '${{ toJson(github) }}'  # Correct GitHub Actions syntax
+                 echo ""Cloning the repo......
+                 git clone https://github.repository/${{github.repository}}.git  
                 
