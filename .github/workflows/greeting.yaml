@@ -1,0 +1,10 @@
+name: Greeting
+on: push        # when it will be trigger
+jobs: 
+    greet:          #greet ---< name of job
+        runs-on: ubuntu-latest   # remote machine runner https://github.com/actions/runner-images
+        steps:  
+            - name: "greet-user"
+              run: echo "hello World"
+              
+
